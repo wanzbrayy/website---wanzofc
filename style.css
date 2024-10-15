@@ -1,0 +1,35 @@
+body {
+  background-color: #2e3ffd;
+}
+.button {
+  position: absolute;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: 2px solid #ffffff;
+  padding: 30px 60px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: color 1s;
+}
+.button:hover {
+  color: #2e3ffd;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 0;
+  height: 100%;
+  background-color: #888;
+  transform: skew(35deg);
+  z-index: -1;
+  transition: width 1s;
+}
+.button:hover:before {
+  width: 250%;
+}
